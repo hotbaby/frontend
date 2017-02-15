@@ -1,0 +1,46 @@
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>HTML DOM Navigation</title>
+</head>
+
+<body>
+
+	<div id="nav"></div>
+	<div id="maincontents">
+		<h1>HTML DOM Navigation</h1>
+		<div>
+			<h2>HTML DOM 节点列表</h2>
+			<p>getElementByTagName()方法返回节点列表。节点列表是一个节点数组。</p>
+			<p>下面的代码选取文档中的所有 <p> 节点：</p>
+			<pre>var x=document.getElementByTagName("p")</pre>
+		</div>
+		<div>
+			<h2>HTML DOM 节点列表长度</h2>
+			<p>length 属性定义节点列表中节点的数量。</p>
+			<pre>
+x=document.getElementsByTagName("p");
+
+for (i=0;i&ltx.lenght:i++)
+{
+	document.write(x[i].innerHTML);
+	document.write("&ltbr/&gt")
+}
+			</pre>
+		</div>
+		<div>
+			<h2>childNodes 和 nodeValue</h2>
+			<p>除了 innerHTML 属性，您也可以使用 childNodes 和 nodeValue 属性来获取元素的内容。</p>
+			<pre>
+var txt=document.getElementById("intro").childNodes[0].nodeValue;
+document.write(txt)
+			</pre>
+		</div>
+	</div>
+	<div id="sliderbar"></div>
+	<div id="footer"></div>
+</body>
+</html>

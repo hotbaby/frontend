@@ -1,0 +1,68 @@
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>jQuery AJAX</title>
+</head>
+
+<body>
+
+    <h1>jQuery AJAX</h1>
+    <div id="nav"></div>
+    <div id="maincontents">
+        <div>
+            <h2>jQuery AJAX load</h2>
+            <p>load() 方法从服务器加载数据，并把返回的数据放入被选的元素中</p>
+            <p>语法</p>
+            <pre>$(selector).load(url, data, callback)</pre>
+            <ul>
+                <li>url 必选参数</li>
+                <li>data 可选参数</li>
+                <li>callback 可选参数</li>
+            </ul>
+            <p>callback 参数</p>
+            <ul>
+                <li>responseTxt 包含返回成功的结果内容</li>
+                <li>statusTxt 包含调用的状态</li>
+                <li>xhr 包含XMLHttpRequest对象</li>
+            </ul>
+        </div>
+        <div>
+            <h2>jQuery $.get方法</h2>
+            <p>$.get() 方法通过HTT GET请求从服务器请求数据</p>
+            <p>语法</p>
+            <pre>$.get(URL, callback)</pre>
+            <p>实例</p>
+            <pre>
+$("button").click(function(){
+    $.get("http://mengyangyang.org", function(data, status){
+        alter("Data: " + data + "\n Status: " + status)
+    })
+})
+            </pre>
+        </div>
+        <div>
+            <h2>jQuery $.post方法</h2>
+            <p>$.post() 方法通过HTTP POST 向服务器提交数据</p>
+            <p>语法</p>
+            <pre>$.post(URL, data, callback)</pre>
+            <p>实例</p>
+            <pre>
+$("button").click(function(){
+    $.post("http://mengyangyang.org", 
+    {
+        name: "Donald Duck",
+        city: "Duckburg"
+    },
+    function(data, status){
+        alter("Data: " + data + "\n Status: " + status)
+    })
+})
+            </pre>
+        </div>
+    </div>
+    <div id="sliderbar"></div>
+    <div id="footer"></div>
+</body>
+</html>

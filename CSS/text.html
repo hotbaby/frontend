@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>CSS 文本</title>
+<style type="text/css">
+pre {
+	width: 665px;
+	margin: 10px;
+	padding: 10px;
+	border: 1px;
+	background: #f5f5f5;
+}
+
+p.important span {
+	color: #dd0000;
+}
+
+p.tip span {
+	color: #ff9955;
+}
+</style>
+</head>
+
+<body>
+	<h1>CSS 文本</h1>
+
+	<div>
+		<strong>CSS 文本属性可定义文本的外观。</strong>
+		<strong>通过文本属性，您可以改变文本的颜色、字符间距，对齐文本，装饰文本，对文本进行缩进，等等。</strong>
+	</div>
+
+	<div>
+		<h2>缩进文本</h2>
+		<p>CSS 提供了 text-indent 属性，该属性可以方便地实现文本缩进。</p>
+		<pre>p {text-indent: 5em;}</pre>
+		<p class="important"><span id="note">注意：</span>一般来说，可以为所有块级元素应用 text-indent，但无法将该属性应用于行内元素，<br>
+		图像之类的替换元素上也无法应用 text-indent 属性。<br>
+		不过，如果一个块级元素（比如段落）的首行中有一个图像，它会随该行的其余文本移动。</p>
+		<p class="tip"><span>提示：</span>如果想把一个行内元素的第一行“缩进”，可以用左内边距或外边距创造这种效果。</p>
+	</div>
+
+	<div>
+		<h2>水平对齐</h2>
+		<p>text-align 是一个基本的属性，它会影响一个元素中的文本行互相之间的对齐方式。</p>
+	</div>
+
+	<div>
+		<h2>字间隔</h2>
+		<p>word-spacing 属性可以改变字（单词）之间的标准间隔。其默认值 normal 与设置值为 0 是一样的。<br>
+		word-spacing 属性接受一个正长度值或负长度值。如果提供一个正长度值，那么字之间的间隔就会增加。为 word-spacing 设置一个负值，会把它拉近：</p>
+		<pre>
+p.spread {word-spacing: 30px;}
+p.tight {word-spacing: -0.5em}
+&lt;p class="spread"&gt;
+This paragraph. The spaces between words will be increased.
+&lt;/p&gt;
+
+&lt;p class="tight"&gt;
+This is a paragraph. The spaces between words will be decreased.
+&lt;/p&gt;
+		</pre>
+	</div>
+
+	<div>
+		<h2>字母间隔</h2>
+		<p>letter-spacing 属性与 word-spacing 的区别在于，字母间隔修改的是字符或字母之间的间隔。</p>
+	</div>
+
+	<div>
+		<h2>字符转换</h2>
+		<p>text-transform 属性处理文本的大小写。这个属性有 4 个值：</p>
+		<ul>
+			<li>none 默认值 none 对文本不做任何改动</li>
+			<li>uppercase  将文本转换为全大写字符</li>
+			<li>lowercase 将文本转换为全小写字符</li>
+			<li>capitalize 只对每个单词的首字母大写</li>
+		</ul>
+		<pre>h1 {text-transform: uppercase}</pre>
+	</div>
+
+	<div>
+		<h2>文本装饰</h2>
+		<p>接下来，我们讨论 text-decoration 属性，这是一个很有意思的属性，它提供了很多非常有趣的行为。<br>
+		text-decoration 有 5 个值：</p>
+		<ul>
+			<li>none</li>
+			<li>underline 会对元素加下划线</li>
+			<li>overline 会在文本的顶端画一个上划线</li>
+			<li>line-through 在文本中间画一个贯穿线</li>
+			<li>blink 会让文本闪烁</li>
+		</ul>
+		<pre>
+a {text-decoration: none;}
+h2.striken {text-decoration: line-through;}
+		</pre>
+	</div>
+</body>
+</html>

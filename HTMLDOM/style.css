@@ -1,0 +1,19 @@
+
+pre {
+	width: 685px;
+	margin: 10px 0 0 0;
+	padding: 10px;
+	border: 1px dotted #785;
+	backgroud: #f5f5f5;
+}
+
+table {
+	display: table;
+	border: 2px;
+}
+
+table.dataintable {
+	margin-top: 10px;
+	border-coolapse: collapse;
+	border: 0px solid #aaa;
+}

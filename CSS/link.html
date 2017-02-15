@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>CSS 链接</title>
+<style type="text/css">
+pre {
+	width: 665px;
+	margin: 10px;
+	padding: 10px;
+	border: 1px;
+	background: #f5f5f5;
+}
+p.important span {
+	color: #dd0000;
+}
+p.tip span {
+	color: #ff9955;
+}
+</style>
+</head>
+
+<body>
+	<h1>CSS 链接</h1>
+	<div>
+		<h2>设置链接的样式</h2>
+		<p>能够设置链接样式的 CSS 属性有很多种（例如 color, font-family, background 等等）。</p>
+		<p>链接的特殊性在于能够根据它们所处的状态来设置它们的样式。</p>
+		<p>链接的四种状态：</p>
+		<ul>
+			<li>a:link - 普通的、未被访问的链接</li>
+			<li>a:visited - 用户已访问的链接</li>
+			<li>a:hover - 鼠标指针位于链接的上方</li>
+			<li>a:active - 链接被点击的时刻</li>
+		</ul>
+		<pre>
+a:link {color: #ff0000;}
+a:visited {color: #00ff00;}
+a:hover {color: #ff00ff;}
+a:active {color: #0000ff;}</pre>
+		<p class="tip"><span></span>当为链接的不同状态设置样式时，请按照以下次序规则：</p>
+		<ul>
+			<li>a:hover 必须位于 a:link 和 a:visited 之后</li>
+			<li>a:active 必须位于 a:hover 之后</li>
+		</ul>
+	</div>
+
+	<div>
+		<h2>常见的链接样式</h2>
+		<h3>文本修饰</h3>
+		<p>text-decoration 属性大多用于去掉链接中的下划线：</p>
+
+		<h3>背景色</h3>
+		<p>background-color 属性规定链接的背景色</p>
+	</div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>CSS 背景</title>
+
+<style type="text/css">
+pre {
+	width: 665px;
+	margin: 10px;
+	padding: 10px;
+	background: #f5f5f5;
+}
+</style>
+</head>
+
+<body>
+	<h1>CSS 背景</h1>
+
+	<div>
+		<strong>CSS 允许应用纯色作为背景，也允许使用背景图像创建相当复杂的效果。</strong>
+		<strong>CSS 在这方面的能力远远在 HTML 之上</strong>
+	</div>
+
+	<div>
+		<h2>背景色</h2>
+		<p>可以使用 background-color 属性为元素设置背景色<br>
+		这条规则把元素的背景设置为灰色：</p>
+		<pre>
+p {
+	background-color: gray;
+	padding: 10px;
+}
+		</pre>
+	</div>
+
+	<div>
+		<h2>背景图像</h2>
+		<p>要把图像放入背景，需要使用 background-image 属性。background-image 属性的默认值是 none，表示背景上没有放置任何图像。<br>
+		如果需要设置一个背景图像，必须为这个属性设置一个 URL 值：</p>
+		<pre>
+body {background-image: url(/i/eg_bg_04.gif)}
+		</pre>
+	</div>
+</body>
+
+</html>

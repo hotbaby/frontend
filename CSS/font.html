@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>CSS 字体</title>
+<style type="text/css">
+pre {
+	width: 665px;
+	margin: 10px;
+	padding: 10px;
+	border: 1px;
+	background: #f5f5f5;
+}
+p.important span {
+	color: #dd0000;
+}
+p.tip span {
+	color: #ff9955;
+}
+</style>
+</head>
+
+<body>
+
+	<h1>CSS 字体</h1>
+	<div>
+		<strong>CSS 字体属性定义文本的字体系列、大小、加粗、风格（如斜体）和变形（如小型大写字母）。</strong>
+	</div>
+
+	<div>
+		<h2>CSS 字体系列</h2>
+		<p>在 CSS 中，有两种不同类型的字体系列名称：</p>
+		<ul>
+			<li>通用字体系列 - 拥有相似外观的字体系统组合（比如 "Serif" 或 "Monospace"）</li>
+			<li>特定字体系列 - 具体的字体系列（比如 "Times" 或 "Courier"）</li>
+		</ul>
+		<p>除了各种特定的字体系列外，CSS 定义了 5 种通用字体系列：</p>
+		<ul>
+			<li>Serif 字体</li>
+			<li>Sans-serif 字体</li>
+			<li>Monospace 字体</li>
+			<li>Cursive 字体</li>
+			<li>Fantasy 字体</li>
+		</ul>
+		<p>除了使用通用的字体系列，您还可以通过 font-family 属性设置更具体的字体。</p>
+	</div>
+
+	<div>
+		<h2>字体风格</h2>
+		<p>font-style 属性最常用于规定斜体文本。<br>
+		该属性有三个值：</p>
+		<ul>
+			<li>normal - 文本正常显示</li>
+			<li>italic - 文本斜体显示</li>
+			<li>oblique - 文本倾斜显示</li>
+		</ul>
+		<pre>
+p.normal {font-style: normal;}
+p.italic {font-style: italic;}
+p.oblique {font-style: oblique;}</pre>
+	</div>
+
+	<div>
+		<h2>字体大小</h2>
+		<p>font-size 属性设置文本的大小。<br>
+		有能力管理文本的大小在 web 设计领域很重要。但是，您不应当通过调整文本大小使段落看上去像标题，或者使标题看上去像段落。<br>
+		请始终使用正确的 HTML 标题，比如使用 &lt;h1&gt; - &lt;h6&gt; 来标记标题，使用 &lt;p&gt; 来标记段落。</p>
+		<p>font-size 值可以是绝对或相对值。</p>
+		<p>绝对值：</p>
+		<ul>
+			<li>将文本设置为指定的大小</li>
+			<li>不允许用户在所有浏览器中改变文本大小</li>
+			<li>绝对大小在确定了输出的物理尺寸时很有用</li>
+		</ul>
+		<p>相对大小：</p>
+		<ul>
+			<li>相对于周围的元素来设置大小</li>
+			<li>允许用户在浏览器改变文本大小</li>
+		</ul>
+		<p class="important"><span>注意：</span>如果您没有规定字体大小，普通文本（比如段落）的默认大小是 16 像素 (16px=1em)。</p>
+
+		<h3>使用像素来设置字体大小</h3>
+		<p>通过像素设置文本大小，可以对文本大小进行完全控制：</p>
+		<pre>
+h1 {font-size: 60px;}
+h2 {font-size: 40px}
+p {font-size: 14px;}</pre>
+
+		<h3>使用 em 来设置字体大小</h3>
+		<p>W3C 推荐使用 em 尺寸单位。</p>
+		<p>1em 等于当前的字体尺寸。如果一个元素的 font-size 为 16 像素，
+		那么对于该元素，1em 就等于 16 像素。在设置字体大小时，em 的值会相对于父元素的字体大小改变。</p>
+		<p>浏览器中默认的文本大小是 16 像素。因此 1em 的默认尺寸是 16 像素。</p>
+		<p>可以使用下面这个公式将像素转换为 em：pixels/16=em</p>
+	</div>
+</body>
+</html>

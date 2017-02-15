@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>如何创建 CSS</title>
+<style type="text/css">
+pre {
+	width: 665px;
+	margin: 10px;
+	padding: 10px;
+	background: #f5f5f5;
+}
+</style>
+</head>
+
+<body>
+	<h1>如何创建 CSS</h1>
+
+	<div>
+		<h2>如何插入样式表</h2>
+		<strong>当读到一个样式表时，浏览器会根据它来格式化 HTML 文档。插入样式表的方法有三种：</strong>
+	</div>
+
+	<div>
+		<h3>外部样式表</h3>
+		<p>当样式需要应用于很多页面时，外部样式表将是理想的选择。在使用外部样式表的情况下，你可以通过改变一个文件来改变整个站点的外观.<br>
+		每个页面使用 &lt;link&gt; 标签链接到样式表</p>
+		<pre>
+&lt;head&gt;
+&lt;link rel="stylesheet" type="text/css" href="mystyle.css"/&gt;
+&lt;head&gt;
+		</pre>
+		<p>浏览器会从文件 mystyle.css 中读到样式声明，并根据它来格式文档。</p>
+	</div>
+
+	<div>
+		<h3>内部样式表</h3>
+		<p>当单个文档需要特殊的样式时，就应该使用内部样式表。你可以使用 &lt;style&gt; 标签在文档头部定义内部样式表，就像这样:</p>
+		<pre>
+&lt;head&gt;
+&lt;style type="text/css"&gt;
+	hr {color: sienna;}
+	p {margin-left: 20px;}
+	body {background-image: url("images/back40.gif");}
+&lt;style&gt;
+&lt;head&gt;
+		</pre>
+	</div>
+
+	<div>
+		<h3>内联样式</h3>
+		<p>由于要将表现和内容混杂在一起，内联样式会损失掉样式表的许多优势。请慎用这种方法</p>
+		<pre>
+&lt;p style="color: sienna; margin-left: 20px"&gt;
+This is a paragraph
+&lt;p&gt;
+		</pre>
+	</div>
+</body>
+</html>

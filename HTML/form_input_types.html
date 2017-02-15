@@ -1,0 +1,114 @@
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+</head>
+
+<body>
+	<h2>输入类型：text</h2>
+	<p>input type text  定义供文本输入的单行输入字段</p>
+	<form>
+		<span>First Name:</span>
+		<input type="text" name="FirstName"><br>
+		<span>Last Name:</span>
+		<input type="text" name="LastName">
+	</form>
+	<hr>
+
+	<h2>输入类型：password</h2>
+	<p>password 定义密码字段</p>
+	<form action="">
+		<span>User Name:</span>
+		<input type="text" name="UserName"><br>
+		<span>User Password:</span>
+		<input type="password" name="password">
+	</form>
+	<p>注释：password 字段中的字符会被做掩码处理（显示为星号或实心圆）</p>
+	<hr>
+
+	<h2>输入类型：submit</h2>
+	<p>submit 定义提交表单数据至表单处理程序的按钮</p>
+	<form action="">
+		<span>First Name:</span>
+		<input type="text" name="FirstName"><br>
+		<span>LastName:</span>
+		<input type="text" name="LastName"><br>
+		<input type="submit" name="Submit">
+	</form>
+	<hr>
+
+	<h2>Input Type: radio</h2>
+	<p>radio 定义单选按钮</p>
+	<form>
+		<input type="radio" name="sex" value="male" checked>Male
+		<input type="radio" name="sex" value="female">Female
+	</form>
+	<hr>
+
+	<h2>Input Type: checkbox</h2>
+	<p>checkbox 定义复选框</p>
+	<form action="">
+		<input type="checkbox" name="vehicle" value="Bike">I have a bike
+		<input type="checkbox" name="vehicle" value="Car">I have a car
+	</form>
+	<hr>
+
+	<h2>Input Type: button</h2>
+	<p>button 定义按钮</p>
+	<input type="button" onclick="alert('hello world')" value="Click Me!">
+	<hr>
+
+	<h2>HTML5 输入类型</h2>
+	<p>HTML5 增加了多个新的输入类型：</p>
+	<ul>
+		<li>color</li>
+		<li>date</li>
+		<li>datetime</li>
+		<li>datetime-local</li>
+		<li>email</li>
+		<li>month</li>
+		<li>number</li>
+		<li>range</li>
+		<li>search</li>
+		<li>tel</li>
+		<li>time</li>
+		<li>url</li>
+		<li>week</li>
+	</ul>
+	<hr>
+
+	<h2>输入类型：date</h2>
+	<form action="">
+		Birthday:
+		<input type="date" name="today">
+	</form>
+	<hr>
+
+	<h2>输入类型：email</h2>
+	<p>email 用于应该包含电子邮件地址的输入字段</p>
+	<form action="">
+		<span>Email:</span>
+		<input type="email" name="email">
+	</form>
+	<hr>
+
+	<h2>输入类型：search</h2>
+	<p>search 用于搜索字段（搜索字段的表现类似常规文本字段）</p>
+	<form action="">
+		<span>Search google:</span>
+		<input type="search" name="googlesearch">
+	</form>
+	<hr>
+
+	<h2>输入类型：url</h2>
+	<p> 用于应该包含 URL 地址的输入字段。</p>
+	<form action="">
+		<span>Add your homepage:</span>
+		<input type="url" name="homepage">
+	</form>
+	<hr>
+
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="utf-8">
+<title>CSS 表格</title>
+<style type="text/css">
+pre {
+	width: 665px;
+	margin: 10px;
+	padding: 10px;
+	border: 1px;
+	background: #f5f5f5;
+}
+</style>
+</head>
+
+<body>
+	<h1>CSS 表格</h1>
+
+	<div>
+		<strong>CSS 表格属性可以帮助您极大地改善表格的外观。</strong>
+	</div>
+
+	<div>
+		<h2>表格边框</h2>
+		<p>如需在 CSS 中设置表格边框，请使用 border 属性。</p>
+		<p>下面的例子为 table、th 以及 td 设置了蓝色边框：</p>
+		<pre>
+table, th, td {
+	border: 1px solid blue;
+}</pre>
+	</div>
+
+	<div>
+		<h2>折叠边框</h2>
+		<p>border-collapse 属性设置是否将表格边框折叠为单一边框：</p>
+		<pre>
+table {
+	border-collapse: collapse;
+}
+table, th, td {
+	border: 1px solid black;
+}</pre>
+	</div>
+
+	<div>
+		<h2>表格宽度和高度</h2>
+		<p>通过 width 和 height 属性定义表格的宽度和高度。</p>
+		<pre>table {width: 100%;}
+th {height: 50px;}</pre>
+	</div>
+
+	<div>
+		<h2>表格文本对齐</h2>
+		<p>text-align 和 vertical-align 属性设置表格中文本的对齐方式。</p>
+		<pre> td {text-align:right;}</pre>
+	</div>
+</body>
+</html>

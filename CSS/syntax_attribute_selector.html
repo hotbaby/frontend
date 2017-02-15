@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>CSS 属性选择器</title>
+<style type="text/css">
+pre {
+	width: 665px;
+	margin: 10px;
+	padding: 10px;
+	border: 1px;
+	background: #f5f5f5;
+}
+</style>
+</head>
+
+<body>
+	<div>
+		<strong>对带有指定属性的 HTML 元素设置样式。</strong>
+		<p>可以为拥有指定属性的 HTML 元素设置样式，而不仅限于 class 和 id 属性。</p>
+	</div>
+
+	<div>
+		<h2>属性选择器</h2>
+		<p>下面的例子为带有 title 属性的所有元素设置样式：</p>
+		<pre>
+[title] {
+	color: red;
+}
+		</pre>
+	</div>
+
+	<div>
+		<h2>属性和值选择器</h2>
+		<p>下面的例子为 title="W3School" 的所有元素设置样式：</p>
+		<pre>
+[title=W3School] {
+	border: 5px solid blue;
+}
+		</pre>
+	</div>
+</body>
+</html>

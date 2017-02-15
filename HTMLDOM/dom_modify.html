@@ -1,0 +1,59 @@
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>HTML DOM Modify</title>
+</head>
+
+<body>
+	<div id="nav"></div>
+	<div id="maincontents">
+		<h1>HTML DOM Modify</h1>
+		<p>修改 HTML = 改变元素、属性、样式和事件。</p>
+		<div>
+			<h2>修改 HTML 元素</h2>
+			<p>修改 HTML DOM 意味着许多不同的方面：</p>
+			<ul>
+				<li>改变 HTML 内容</li>
+				<li>改变 CSS 样式</li>
+				<li>改变 HTML 属性</li>
+				<li>创建新的 HTML 元素</li>
+				<li>删除已有的 HTML 元素</li>
+				<li>改变事件（处理程序）</li>
+			</ul>
+		</div>
+		<div>
+			<h2>创建 HTML 内容</h2>
+			<pre>document.getElementById("p1").innerHTML="New text"</pre>
+		</div>
+		<div>
+			<h2>改变 HTML 样式</h2>
+			<p>通过 HTML DOM，您能够访问 HTML 元素的样式对象。</p>
+			<pre>document.getElementById("p2").style.color="blue"</pre>
+		</div>
+		<div>
+			<h2>创建新的 HTML 元素</h2>
+			<p>如需向 HTML DOM 添加新元素，您首先必须创建该元素（元素节点），然后把它追加到已有的元素上。</p>
+			<pre>var para=document.createElement("p");
+var node = document.createTextNode("This is new.");
+para.appendChild(node);
+
+var element=document.getElementById("d1");
+element.appendChild("para")</pre>
+		</div>
+		<div>
+			<h2>使用事件</h2>
+			<p>HTML DOM 允许您在事件发生时执行代码。</p>
+			<ul>
+				<li>在元素上点击</li>
+				<li>加载页面</li>
+				<li>改变输入字段</li>
+			</ul>
+		</div>
+	</div>
+	<div id="sliderbar"></div>
+	<div id="footer"></div>
+</body>
+</html>

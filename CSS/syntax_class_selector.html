@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<style type="text/css">
+pre {
+	width: 665px;
+	padding: 10px;
+	margin: 10px;
+	background: #f5f5f5;
+}
+.center {
+	text-align: center;
+}
+#note {
+	color: #dd0000;
+}
+</style>
+<title>CSS 类选择器</title>
+</head>
+
+<body>
+	<h1>CSS 类选择器</h1>
+	<div>
+		<strong>在 CSS 中，类选择器以一个点号显示：</strong>
+		<pre>.center {text-align: center;}</pre>
+		<p class="center">This paragraph will also be center-aligned.</p>
+		<span id="note">注意：</span><span>类名的第一个字符不能使用数字！</span>
+	</div>
+
+	<div>
+		<strong>和 id 一样，class 也可被用作派生选择器：</strong>
+		<pre>
+.fancy td {
+	color: #f60;
+	background: #666;
+}
+		</pre>
+		<p>在上面这个例子中，类名为 fancy 的更大的元素内部的表格单元都会以灰色背景显示橙色文字</p>
+	</div>
+
+	<div>
+		<strong>元素也可以基于它们的类而被选择：</strong>
+		<pre>
+td.fancy {
+	color: #f60;
+	background: #666;
+}
+		</pre>
+		<p>类名为 fancy 的表格单元将是带有灰色背景的橙色。</p>
+	</div>
+</body>
+</html>

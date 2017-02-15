@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>CSS 外边距合并</title>
+<style type="text/css">
+pre {
+	width: 665px;
+	margin: 10px;
+	padding: 10px;
+	border: 1px;
+	background: #f5f5f5;
+}
+p.important span {
+	color: #dd0000;
+}
+p.tip span {
+	color: #ff9955;
+}
+</style>
+</head>
+
+<body>
+
+	<h1>CSS 外边距合并</h1>
+	<strong>外边距合并指的是，当两个垂直外边距相遇时，它们将形成一个外边距。</strong>
+	<strong>合并后的外边距的高度等于两个发生合并的外边距的高度中的较大者。</strong>
+
+	<div>
+		<h2>外边距合并</h2>
+		<p>外边距合并（叠加）是一个相当简单的概念。但是，在实践中对网页进行布局时，它会造成许多混淆。</p>
+		<p>简单地说，外边距合并指的是，当两个垂直外边距相遇时，它们将形成一个外边距。合并后的外边距的高度等于两个发生合并的外边距的高度中的较大者。</p>
+		<img alt="" src="static/ct_css_margin_collapsing_example_1.gif">
+		<p>当一个元素包含在另一个元素中时（假设没有内边距或边框把外边距分隔开），它们的上和/或下外边距也会发生合并。</p>
+		<img src="static/ct_css_margin_collapsing_example_2.gif">
+	</div>
+</body>
+</html>

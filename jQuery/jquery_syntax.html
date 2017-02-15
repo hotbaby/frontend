@@ -1,0 +1,41 @@
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>jQuery 语法</title>
+</head>
+
+<body>
+    <div id="nav"></div>
+    <div id="maincontents">
+        <h1>jQuery 语法</h1>
+        <div>
+            <h2>jQuery 语法</h2>
+            <p>jQuery的语法是为HTML元素的选取而编制的。</p>
+            <p>基础语法式： $(selector).action()</p>
+            <ul>
+                <li>$定义jQuery</li>
+                <li>selector 查找HTML元素</li>
+                <li>action执行对元素的操作</li>
+            </ul>
+            <p>实例</p>
+            <p>$(this).hide() 隐藏当前元素</p>
+            <p>$("p").hide() 隐藏所有段落</p>
+            <p>$(".test").hide() 隐藏所有class="test"的元素</p>
+            <p>$("#test").hide() 隐藏所有id="test"的元素</p>
+        </div>
+        <div>
+            <h2>文档就绪函数</h2>
+            <pre>
+$(document).ready(function(){
+//jquery functions
+})
+            </pre>
+            <p>这是为了防止在文档完全加载完之前就运行jQuery代码</p>
+        </div>
+    </div>
+    <div id="sliderbar"></div>
+    <div id="footer"></div>
+</body>
+</html>
